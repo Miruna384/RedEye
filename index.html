@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #0a0a0a; /* Dark mode curat */
+            background-color: #0a0a0a;
             color: #f0f0f0;
             overflow-x: hidden;
         }
@@ -69,6 +69,12 @@
             border: 1px solid #ff2a2a;
             box-shadow: 0 0 40px rgba(255, 42, 42, 0.15);
             margin-top: 20px;
+            overflow: hidden; /* Ensures the image respects the rounded corners */
+        }
+        .image-placeholder img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Keeps the aspect ratio without distorting the image */
         }
         .features {
             display: flex;
@@ -131,44 +137,4 @@
 
     <header>
         <div class="logo">Red Eye</div>
-        <button class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;">Vezi ofertele noastre</button>
-    </header>
-
-    <section class="hero">
-        <h1>Tastatura <span class="highlight">Red Eye</span></h1>
-        <p class="subtitle">Evoluția perifericelor de gaming. Senzor IR integrat pentru eye-tracking avansat și macro-uri bazate pe gesturi, direct de la tastatura ta.</p>
-        
-        <div class="image-placeholder">
-            <p style="color: #666; font-style: italic;">[ Aici va fi integrată imaginea cu persoana ținând tastatura Red Eye în mână ]</p>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="feature-card">
-            <div class="feature-icon">🎯</div>
-            <h3 style="color: #eee;">IR Eye-Tracking</h3>
-            <p style="color: #aaa; font-size: 0.95rem;">Urmărește-ți privirea în timp real. Controlează camera în jocurile FPS sau interacționează cu HUD-ul doar uitându-te la el.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">✋</div>
-            <h3 style="color: #eee;">Macro Gesturi</h3>
-            <p style="color: #aaa; font-size: 0.95rem;">Hand-Tracking infraroșu. Glisează mâna deasupra senzorului pentru a declanșa abilități complexe fără să apeși taste.</p>
-        </div>
-        <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3 style="color: #eee;">Zero Latency</h3>
-            <p style="color: #aaa; font-size: 0.95rem;">Senzor optic de înaltă precizie conectat direct la controller-ul de 8000Hz al tastaturii pentru o reacție instantanee.</p>
-        </div>
-    </section>
-
-    <section class="buy-section">
-        <h2 style="font-size: 2.5rem; margin-bottom: 40px;">Fii cu un pas înaintea inamicilor.</h2>
-        <button class="cta-button">Vezi ofertele noastre</button>
-    </section>
-
-    <footer>
-        &copy; 2026 Red Eye Gaming. Toate drepturile rezervate.
-    </footer>
-
-</body>
-</html>
+        <button class="cta
