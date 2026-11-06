@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Eye Keyboard - Next-Gen Gaming</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a; /* Dark mode curat */
+            color: #f0f0f0;
+            overflow-x: hidden;
+        }
+        header {
+            padding: 20px 50px;
+            background: rgba(10, 10, 10, 0.9);
+            border-bottom: 1px solid #ff2a2a;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: 900;
+            color: #ff2a2a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 42, 42, 0.6);
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px;
+            text-align: center;
+            background: radial-gradient(circle at top, #240505 0%, #0a0a0a 70%);
+        }
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .highlight {
+            color: #ff2a2a;
+            text-shadow: 0 0 15px rgba(255, 42, 42, 0.5);
+        }
+        p.subtitle {
+            font-size: 1.2rem;
+            max-width: 700px;
+            color: #bbbbbb;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .image-placeholder {
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            background: #111;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ff2a2a;
+            box-shadow: 0 0 40px rgba(255, 42, 42, 0.15);
+            margin-top: 20px;
+        }
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 60px;
+            flex-wrap: wrap;
+        }
+        .feature-card {
+            background: #141414;
+            border: 1px solid #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            width: 300px;
+            text-align: center;
+            transition: 0.3s ease-in-out;
+        }
+        .feature-card:hover {
+            border-color: #ff2a2a;
+            box-shadow: 0 10px 20px rgba(255, 42, 42, 0.1);
+            transform: translateY(-5px);
+        }
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .buy-section {
+            text-align: center;
+            padding: 80px 20px;
+            background: #111;
+            border-top: 1px solid #222;
+        }
+        .cta-button {
+            background: transparent;
+            color: #ff2a2a;
+            border: 2px solid #ff2a2a;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 4px;
+        }
+        .cta-button:hover {
+            background: #ff2a2a;
+            color: #fff;
+            box-shadow: 0 0 20px rgba(255, 42, 42, 0.5);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #050505;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Red Eye</div>
+        <button class="cta-button" style="padding: 10px 20px; font-size: 0.9rem;">Vezi ofertele noastre</button>
+    </header>
+
+    <section class="hero">
+        <h1>Tastatura <span class="highlight">Red Eye</span></h1>
+        <p class="subtitle">Evoluția perifericelor de gaming. Senzor IR integrat pentru eye-tracking avansat și macro-uri bazate pe gesturi, direct de la tastatura ta.</p>
+        
+        <div class="image-placeholder">
+            <p style="color: #666; font-style: italic;">[ Aici va fi integrată imaginea cu persoana ținând tastatura Red Eye în mână ]</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature-card">
+            <div class="feature-icon">🎯</div>
+            <h3 style="color: #eee;">IR Eye-Tracking</h3>
+            <p style="color: #aaa; font-size: 0.95rem;">Urmărește-ți privirea în timp real. Controlează camera în jocurile FPS sau interacționează cu HUD-ul doar uitându-te la el.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">✋</div>
+            <h3 style="color: #eee;">Macro Gesturi</h3>
+            <p style="color: #aaa; font-size: 0.95rem;">Hand-Tracking infraroșu. Glisează mâna deasupra senzorului pentru a declanșa abilități complexe fără să apeși taste.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3 style="color: #eee;">Zero Latency</h3>
+            <p style="color: #aaa; font-size: 0.95rem;">Senzor optic de înaltă precizie conectat direct la controller-ul de 8000Hz al tastaturii pentru o reacție instantanee.</p>
+        </div>
+    </section>
+
+    <section class="buy-section">
+        <h2 style="font-size: 2.5rem; margin-bottom: 40px;">Fii cu un pas înaintea inamicilor.</h2>
+        <button class="cta-button">Vezi ofertele noastre</button>
+    </section>
+
+    <footer>
+        &copy; 2026 Red Eye Gaming. Toate drepturile rezervate.
+    </footer>
+
+</body>
+</html>
